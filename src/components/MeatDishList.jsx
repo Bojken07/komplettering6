@@ -5,7 +5,7 @@ import { meatDishes } from '../data';
 const MeatDishList = () => {
     return (
         <div>
-            <h1>Lista över Kötträtter</h1>
+            <h1>Lista med Kötträtt</h1>
             <ul>
                 {meatDishes.map(dish => (
                     <li key={dish.id}>
