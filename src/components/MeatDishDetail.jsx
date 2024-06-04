@@ -12,14 +12,16 @@ const MeatDishDetail = () => {
 
     return (
         <div>
-            <h1>{dish.name}</h1>
-            <h2>Ingredienser</h2>
-            <ul>
-                {dish.ingredients.map((ingredient, index) => (
-                    <li key={index}>{ingredient}</li>
-                ))}
-            </ul>
-        </div>
+        <h1>{dish.name}</h1>
+        <p>{dish.description}</p>
+        <p>Betyg: {dish.rating}</p>
+        <h2>Ingredienser</h2>
+        <ul>
+            {dish.ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient}</li>
+            ))}
+        </ul>
+    </div>
     );
 };
 

@@ -6,13 +6,13 @@ const MeatDishList = () => {
     return (
         <div>
             <h1>Lista med Kötträtt</h1>
-            <ul>
+            <div className="card-container">
                 {meatDishes.map(dish => (
-                    <li key={dish.id}>
-                        <Link to={`/dish/${dish.id}`}>{dish.name}</Link>
-                    </li>
+                    <div key={dish.id} className="card">
+                        <h2><Link to={`/dish/${dish.id}`}>{dish.name}</Link></h2>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
